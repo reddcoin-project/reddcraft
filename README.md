@@ -1,7 +1,7 @@
 reddcraft
 =========
 
-Reddcoin plugin for Minecraft
+Reddcoin plugin for Minecraft (Bukkit)
 
 ####Commands
 
