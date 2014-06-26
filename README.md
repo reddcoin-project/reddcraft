@@ -3,6 +3,17 @@ reddcraft
 
 Reddcoin plugin for Minecraft (Bukkit)
 
+####Installing
+* [Register at ReddAPI](https://www.reddapi.com/) (please enable 2FA!)
+* [Generate a GET- and POST-key at ReddAPI](https://www.reddapi.com/Vault/APIKeys)
+* [Download the latest release of this plugin](http://reddcoinhub.com/reddcraft/reddcraft-latest.jar) or compile this plugin using Maven
+* Copy the .jar-file into the /plugins directory of your Bukkit-server
+* Start the server
+* Wait for the server to start completely
+* Stop the server
+* Edit /plugins/ReddCraft/config.yml to reflect your details
+* Start the server
+
 ####Commands
 
 ```
