@@ -9,7 +9,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import com.reddcoin.bukkit.reddcraft.commands.BalanceCommand;
 import com.reddcoin.bukkit.reddcraft.commands.DonateCommand;
-import com.reddcoin.bukkit.reddcraft.commands.InfoCommand;
+import com.reddcoin.bukkit.reddcraft.commands.AccountCommand;
 import com.reddcoin.bukkit.reddcraft.commands.PayCommand;
 import com.reddcoin.bukkit.reddcraft.commands.WithdrawCommand;
 import com.reddcoin.bukkit.reddcraft.listeners.MainPlayerListener;
@@ -42,7 +42,7 @@ public class ReddCraftPlugin extends JavaPlugin {
 
         getCommand("balance").setExecutor(new BalanceCommand(this));
         getCommand("donate").setExecutor(new DonateCommand(ReddCraftPlugin.this.getConfig().getString("donationreceiver"), this));
-        getCommand("info").setExecutor(new InfoCommand(this));
+        getCommand("account").setExecutor(new AccountCommand(this));
         getCommand("pay").setExecutor(new PayCommand(this));
         getCommand("tip").setExecutor(new PayCommand(this));
         getCommand("withdraw").setExecutor(new WithdrawCommand(this));

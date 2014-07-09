@@ -17,6 +17,10 @@ Reddcoin plugin for Minecraft (Bukkit)
 ####Commands
 
 ```
+/account
+        description: Displays your ReddCoin-address and its balance.
+        usage: "Usage: '/account' to display your username and Reddcoin-address"
+        permission: reddcraft.account
 /balance
         description: Displays your current ReddCoin-balance.
         usage: "Usage: '/balance' to display your current Reddcoin-balance"
@@ -25,10 +29,6 @@ Reddcoin plugin for Minecraft (Bukkit)
         description: Donate Reddcoins to this server.
         usage: "Usage: '/donate AMOUNT' to donate a certain of Reddcoins to this server"
         permission: reddcraft.donate
-/info
-        description: Displays your ReddCoin-address and its balance.
-        usage: "Usage: '/info' to display your username and Reddcoin-address"
-        permission: reddcraft.info
 /pay
         description: Pay a player an amount of Reddcoins.
         usage: "Usage: '/pay PLAYERNAME AMOUNT' to pay a certain of Reddcoins to a specific player"
@@ -47,20 +47,20 @@ Reddcoin plugin for Minecraft (Bukkit)
     reddcraft.*:
         description: Gives access to all ReddCraft commands
         children:
+            reddcraft.account: true
             reddcraft.balance: true
             reddcraft.donate: true
-            reddcraft.info: true
             reddcraft.pay: true
             reddcraft.tip: true
             reddcraft.withdraw: true
+    reddcraft.account:
+        description: Allows usage of /account
+        default: true
     reddcraft.balance:
         description: Allows usage of /balance
         default: true
     reddcraft.donate:
         description: Allows usage of /donate
-        default: true
-    reddcraft.info:
-        description: Allows usage of /info
         default: true
     reddcraft.pay:
         description: Allows usage of /pay

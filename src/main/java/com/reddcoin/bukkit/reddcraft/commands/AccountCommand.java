@@ -8,15 +8,15 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import com.reddcoin.bukkit.reddcraft.commands.base.BaseCommand;
 import com.reddcoin.bukkit.reddcraft.reddapi.ReddAPI;
-import com.reddcoin.bukkit.reddcraft.tasks.InfoTask;
+import com.reddcoin.bukkit.reddcraft.tasks.AccountTask;
 
 /**
  * Handler for the /info command.
  * @author Leonard Simonse
  */
-public class InfoCommand extends BaseCommand {
+public class AccountCommand extends BaseCommand {
 	
-	public InfoCommand(JavaPlugin plugin) {
+	public AccountCommand(JavaPlugin plugin) {
 		super(plugin);
 	}
 
@@ -41,7 +41,7 @@ public class InfoCommand extends BaseCommand {
     
     private void getInfo(Player player) {
     	ReddAPI ReddAPI = com.reddcoin.bukkit.reddcraft.reddapi.ReddAPI.getInstance();
-    	InfoTask infoTask = new InfoTask(this, ReddAPI, player);
+    	AccountTask infoTask = new AccountTask(this, ReddAPI, player);
     	infoTask.runTaskAsynchronously(thisPlugin);
     }
 }

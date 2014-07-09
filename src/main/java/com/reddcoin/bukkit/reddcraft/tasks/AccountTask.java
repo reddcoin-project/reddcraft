@@ -4,7 +4,7 @@ import org.bukkit.entity.Player;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.reddcoin.bukkit.reddcraft.commands.InfoCommand;
+import com.reddcoin.bukkit.reddcraft.commands.AccountCommand;
 import com.reddcoin.bukkit.reddcraft.model.UserInfo;
 import com.reddcoin.bukkit.reddcraft.reddapi.ReddAPI;
 import com.reddcoin.bukkit.reddcraft.tasks.base.BaseTask;
@@ -13,11 +13,11 @@ import com.reddcoin.bukkit.reddcraft.tasks.base.BaseTask;
  * Asynchronous task for the /info command.
  * @author Leonard Simonse
  */
-public class InfoTask extends BaseTask {
+public class AccountTask extends BaseTask {
  
-    private InfoCommand command;
+    private AccountCommand command;
  
-    public InfoTask(InfoCommand command, ReddAPI api, Player player) {
+    public AccountTask(AccountCommand command, ReddAPI api, Player player) {
     	super(api, player);
         this.command = command;
     }
